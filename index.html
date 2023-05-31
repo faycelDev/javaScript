@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Le Café de la Place</h1>
+    
+    <!-- <div class="d-flex justify-content-center mt-3 w-75">
+      <button id="openModal" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Ajouter un produit
+    </button></div> -->
+    <div class="d-flex ">
+    <table class="table table-striped w-75 m-auto mt-5">
+        <thead>
+          <tr>
+            <th scope="col">Nom</th>
+            <th scope="col">quantités de produit</th>
+            <th scope="col">prix d'achat HT</th>
+            <th scope="col">prix de vente HT</th>
+            <th scope="col">marge HT</th>
+            <th scope="col">prix de vente TTC</th>
+            <th scope="col">type</th>
+            <th scope="col">modifier stock</th>
+            <th scope="col">Supprimer</th>
+            <th scope="col">Modifier</th>
+          </tr>
+        </thead>
+
+        <tbody id="listProduit">
+       
+          
+          
+         
+         
+        </tbody>
+      </table>
+  
+      
+    </div>
+  
+    
+
+
+
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Faites votre choix</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body row">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Nom du produit" id="name">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Quantités de produits" id="quantites">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" id="prixAchat" placeholder="Prix d'achat">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" id="prixVente" placeholder="Prix de vente">
+                  </div>
+                  <div class="col-md-6">
+                    <select id="type" class="form-select">
+                      <option selected disabled>Choisissez un type</option>
+                      <option>Boisson fraîche</option>
+                      <option>Boisson chaude</option>
+                      <option>Autre</option>
+                    </select>
+                  </div>
+            </div>
+            <div class="modal-footer">
+              <button id="close" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button onclick="save()" type="button" class="btn btn-primary">Save changes</button>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+
+   
+  
+
+    <div class="d-flex justify-content-center w-75 ">
+      <button id="openModal" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Ajouter un produit
+    </button></div>
+
+
+
+
+
+
+
+
+
+
+ 
+
+   
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
+
